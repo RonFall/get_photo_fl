@@ -35,7 +35,7 @@ class PhotoListPage extends StatelessWidget {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height - 110,
+              height: MediaQuery.of(context).size.height - 100,
               margin: const EdgeInsets.only(top: 20),
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -45,7 +45,7 @@ class PhotoListPage extends StatelessWidget {
                 ),
               ),
               child: Container(
-                margin: const EdgeInsets.only(top: 30),
+                margin: const EdgeInsets.only(top: 30, bottom: 30),
                 child: FutureBuilder<List<DocBody>>(
                   future: fetchData(http.Client()),
                   builder: (context, snapshot) {
